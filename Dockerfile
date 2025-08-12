@@ -30,6 +30,7 @@ RUN npm ci --omit=dev && npm cache clean --force
 
 # Set ownership
 RUN chown -R appuser:nodejs /app
+
 USER appuser
 
 EXPOSE 3000
