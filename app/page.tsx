@@ -97,7 +97,7 @@ export default function TradeSizerAI() {
 
           <PositionCalculator onCalculationComplete={handleCalculationComplete} />
           
-          <CalculationHistory newCalculation={lastCalculation} />
+          <CalculationHistory newCalculation={lastCalculation || undefined} />
           
           <PlatformTemplates />
 

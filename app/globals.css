@@ -69,7 +69,7 @@
   }
   
   .input-field-error {
-    @apply border-error focus:border-error focus:shadow-0 focus:ring-2 focus:ring-error/20;
+    @apply border-error focus:border-error focus:shadow-none focus:ring-2 focus:ring-error/20;
   }
   
   .input-with-label {
