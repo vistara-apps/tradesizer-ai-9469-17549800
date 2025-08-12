@@ -1,4 +1,3 @@
-
 'use client'
 
 import { useMiniKit, usePrimaryButton, useAddFrame, useNotification } from '@coinbase/onchainkit/minikit'
@@ -7,6 +6,7 @@ import { AppHeader } from './components/AppHeader'
 import { PositionCalculator } from './components/PositionCalculator'
 import { CalculationHistory } from './components/CalculationHistory'
 import { PlatformTemplates } from './components/PlatformTemplates'
+import { PremiumFeatures } from './components/PremiumFeatures'
 
 interface CalculationResult {
   positionSize: number
@@ -80,6 +80,8 @@ export default function TradeSizerAI() {
           <PositionCalculator onCalculationComplete={handleCalculationComplete} />
           
           <CalculationHistory newCalculation={lastCalculation} />
+          
+          <PremiumFeatures />
           
           <PlatformTemplates />
 
