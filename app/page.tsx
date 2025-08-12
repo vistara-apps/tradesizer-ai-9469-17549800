@@ -16,7 +16,7 @@ interface CalculationResult {
 
 export default function TradeSizerAI() {
   const { setFrameReady, isFrameReady, context } = useMiniKit()
-  const [lastCalculation, setLastCalculation] = useState<CalculationResult | null>(null)
+  const [lastCalculation, setLastCalculation] = useState<CalculationResult | undefined>(undefined)
   const [calculationMode, setCalculationMode] = useState('calculate')
   const addFrame = useAddFrame()
   const sendNotification = useNotification()
@@ -50,7 +50,7 @@ export default function TradeSizerAI() {
 
   const handleNewCalculation = useCallback(() => {
     setCalculationMode('calculate')
-    setLastCalculation(null)
+    setLastCalculation(undefined)
   }, [])
 
   // Primary button management
