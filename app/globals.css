@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 240 80% 50%;
+    --accent: 160 70% 45%;
+    --bg: 230 15% 95%;
+    --surface: 230 15% 100%;
+    --text-primary: 230 15% 10%;
+    --text-secondary: 230 15% 40%;
+  }
+  
+  body {
+    @apply bg-bg text-text-primary;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface border border-text-secondary/20 hover:bg-text-secondary/5 text-text-primary px-4 py-3 rounded-md transition-colors font-medium;
+  }
+  
+  .btn-copy {
+    @apply bg-accent hover:bg-accent/90 text-white px-4 py-3 rounded-md transition-colors font-medium;
+  }
+  
+  .card {
+    @apply bg-surface border border-text-secondary/10 rounded-lg p-6 shadow-card;
+  }
+  
+  .card-result {
+    @apply bg-accent/5 border border-accent/20 rounded-lg p-6 shadow-card;
+  }
+  
+  .input-field {
+    @apply bg-surface border border-text-secondary/20 rounded-md px-3 py-3 text-text-primary placeholder:text-text-secondary focus:border-primary focus:outline-none transition-colors;
+  }
+  
+  .input-with-label {
+    @apply space-y-2;
+  }
+  
+  .input-numeric {
+    @apply input-field font-mono;
+  }
+  
+  .app-header {
+    @apply flex justify-between items-center mb-6 px-5;
+  }
+  
+  .container-app {
+    @apply px-5 max-w-lg mx-auto;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

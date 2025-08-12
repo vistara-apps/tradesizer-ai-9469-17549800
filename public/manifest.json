@@ -1,0 +1,14 @@
+{
+  "name": "TradeSizer AI",
+  "description": "TradeSizer AI is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://9469b61d-0dbc-4956-a9d9-ce379edc7d7d.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "TradeSizer AI",
+      "description": "TradeSizer AI is a Base Mini App built with Zara.",
+      "url": "https://9469b61d-0dbc-4956-a9d9-ce379edc7d7d.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
